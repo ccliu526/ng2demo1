@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ArticleComponent } from './article/article.component';
 import { MaskPipe } from './mask.pipe';
+import { ArticleService } from "app/article.service";
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { MaskPipe } from './mask.pipe';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ArticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
